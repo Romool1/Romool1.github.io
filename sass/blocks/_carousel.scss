@@ -1,0 +1,33 @@
+.carousel {
+    display: block;
+}
+
+.carousel__inner {
+    position: relative;
+    display: block;
+}
+
+.slick-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -66px;
+    z-index: 1;
+    border: none;
+    background-color: white;
+}
+
+.slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -66px;
+    z-index: 1;
+    border: none;
+    background-color: white;
+}
+
+.slick-initialized .slick-slide {
+    display: flex;
+    justify-content: center;
+}

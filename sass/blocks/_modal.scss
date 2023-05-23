@@ -1,0 +1,68 @@
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    background-color: rgba($color: #000000, $alpha: 0.56);
+    width: 100%;
+    height: 100%;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    min-height: 400px;
+    background-color: #f2f2f2;
+    padding: 38px 40px 40px 40px;
+    .modal__close {
+        cursor: pointer;
+        position: absolute;
+        top: 1%;
+        right: -10%;
+        font-size: 21px;
+        color: red;
+        &:hover {
+            color: red;
+            font-size: 35px;
+            top: -6px;
+            right: -11%;
+        }
+    }
+    .modal__subtitle {
+        font-size: 18px;
+        font-weight: 700;
+        color: #0d0d0d;
+        text-align: center;
+    }
+    .modal__descr {
+        font-size: 14px;
+        font-weight: 500;
+        color: #0d0d0d;
+        text-align: center;
+    }
+
+    .feed-form {
+        margin-top: 25px;
+    }
+    .error {
+        border: 1px solid red;
+    }
+
+    label.error {
+        border: none;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+
+.modal_mini {
+    min-height: 140px;
+}
+
+#consultation,
+#order,
+#thanks {
+    display: none;
+}
